@@ -3,7 +3,6 @@
 
 /**
  * main - this is the main function
- *
  * return: 1 always
  */
 

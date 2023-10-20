@@ -1,4 +1,4 @@
-#iclude <stdio>
+#include <stdio>
 /**
  * main - this is the main function
  *

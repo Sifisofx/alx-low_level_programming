@@ -6,14 +6,15 @@
  */
 int main(void)
 {
-	long x, o, num = 612852475143;
-	double square = i(num);
+	long x, o;
+	long number = 612852475143;
+	double square = sqrt(number);
 
 	for (x = 1; x <= square; x++)
 	{
-		if (num % x == 0)
+		if (number % x == 0)
 		{
-			o = num / x;
+			o = number / x;
 		}
 	}
 	printf("%ld\n", o);

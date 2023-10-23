@@ -8,7 +8,7 @@
 int main(void)
 {
 	char password[84];
-	int index = 0, sum = 0, dh1, dh2;
+	int index = 0, sum = 0, d_h1, dh2;
 
 	srand(time(0));
 
@@ -21,14 +21,14 @@ int main(void)
 
 	if (sum != 2772)
 	{
-		dh1 = (sum - 2772) / 2;
+		d_h1 = (sum - 2772) / 2;
 		dh2 = (sum - 2772) / 2;
 
 		if ((sum - 2772) % 2 != 0)
-			dh1++;
+			d_h1++;
 		for (index = 0; password[index]; index++)
 		{
-			if (password[index] >= (33 + dh1))
+			if (password[index] >= (33 + d_h1))
 			{
 				password[index] -= dh2;
 				break;
